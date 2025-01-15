@@ -159,6 +159,16 @@
                 transform: translateX(-100%); /* Move to off-screen to the left */
             }
         }
+        .logo {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #00c3ff;
+    text-shadow:10 0 0 11px #000000;
+}
     </style>
      <script>
         // Display a confirmation prompt when the user tries to refresh or leave the page
@@ -173,6 +183,11 @@
     </script>
 </head>
 <body>
+
+    <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+        Play with<span>   Code</span>
+    </div>
+
     <div class="scrolling-text" >
         <span style="color: red;">1. Do not switch between tab, it may caues to disqualify from the event,
             2. Do not refresh the page, it may caues to lose the whole content. </span>
@@ -340,7 +355,7 @@
     }
 
     // Attach the prevent paste event to all text areas
-    document.getElementById('htmlCode').addEventListener('paste', preventPaste);
+     document.getElementById('htmlCode').addEventListener('paste', preventPaste);
      document.getElementById('cssCode').addEventListener('paste', preventPaste);
      document.getElementById('jsCode').addEventListener('paste', preventPaste);
 
